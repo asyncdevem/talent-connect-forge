@@ -6,9 +6,9 @@ import { Briefcase, FileText, CheckCircle, Clock, TrendingUp, ArrowRight } from 
 import { Link } from 'react-router-dom';
 
 const stats = [
-  { label: 'Applied Jobs', value: 12, icon: FileText, color: 'text-primary' },
+  { label: 'Applied Jobs', value: 12, icon: FileText, color: 'text-info' },
   { label: 'Under Review', value: 5, icon: Clock, color: 'text-warning' },
-  { label: 'Shortlisted', value: 3, icon: TrendingUp, color: 'text-accent' },
+  { label: 'Shortlisted', value: 3, icon: TrendingUp, color: 'text-status-shortlisted' },
   { label: 'Offers', value: 1, icon: CheckCircle, color: 'text-success' },
 ];
 
@@ -95,9 +95,9 @@ export default function StudentDashboard() {
                     </div>
                     <div className="text-right">
                       <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
-                        app.status === 'Shortlisted' ? 'bg-success/10 text-success' :
-                        app.status === 'Under Review' ? 'bg-warning/10 text-warning' :
-                        'bg-muted text-muted-foreground'
+                        app.status === 'Shortlisted' ? 'status-shortlisted' :
+                        app.status === 'Under Review' ? 'status-review' :
+                        'status-applied'
                       }`}>
                         {app.status}
                       </span>

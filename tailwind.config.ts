@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -38,6 +39,10 @@ export default {
         warning: {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -64,6 +69,21 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        // Status colors for applications
+        status: {
+          applied: "hsl(var(--status-applied))",
+          review: "hsl(var(--status-review))",
+          shortlisted: "hsl(var(--status-shortlisted))",
+          rejected: "hsl(var(--status-rejected))",
+          selected: "hsl(var(--status-selected))",
+        },
+        // Admin metric colors
+        metric: {
+          students: "hsl(var(--metric-students))",
+          recruiters: "hsl(var(--metric-recruiters))",
+          jobs: "hsl(var(--metric-jobs))",
+          placements: "hsl(var(--metric-placements))",
         },
       },
       borderRadius: {
