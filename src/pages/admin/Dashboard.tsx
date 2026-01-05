@@ -5,10 +5,10 @@ import { Users, Building, Briefcase, TrendingUp, CheckCircle, XCircle, Clock } f
 import { Link } from 'react-router-dom';
 
 const stats = [
-  { label: 'Total Students', value: '2,450', icon: Users, color: 'text-primary', change: '+12%' },
-  { label: 'Total Recruiters', value: '156', icon: Building, color: 'text-accent', change: '+8%' },
-  { label: 'Active Jobs', value: '324', icon: Briefcase, color: 'text-success', change: '+15%' },
-  { label: 'Placements', value: '892', icon: TrendingUp, color: 'text-warning', change: '+22%' },
+  { label: 'Total Students', value: '2,450', icon: Users, color: 'text-metric-students', change: '+12%' },
+  { label: 'Total Recruiters', value: '156', icon: Building, color: 'text-metric-recruiters', change: '+8%' },
+  { label: 'Active Jobs', value: '324', icon: Briefcase, color: 'text-metric-jobs', change: '+15%' },
+  { label: 'Placements', value: '892', icon: TrendingUp, color: 'text-metric-placements', change: '+22%' },
 ];
 
 const pendingApprovals = [
